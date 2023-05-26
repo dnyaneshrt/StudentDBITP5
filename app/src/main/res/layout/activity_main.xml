@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".MainActivity">
+
+  <EditText
+      android:id="@+id/et_roll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="enter roll no."
+      android:inputType="number"
+      android:padding="8dp"
+      android:background="@drawable/border"
+      android:layout_margin="2dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter name here."
+        android:inputType="text"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:layout_margin="2dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter date of birth:"
+        android:background="@drawable/border"
+        android:inputType="date"
+        android:padding="8dp"
+        android:layout_margin="2dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter address here:"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:padding="8dp"
+        android:layout_margin="2dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        android:padding="8dp"
+        android:layout_margin="2dp"/>
+    <Button
+        android:id="@+id/btn_read"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="read"
+        android:padding="8dp"
+        android:layout_margin="2dp"/>
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:padding="8dp"
+        android:layout_margin="2dp"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:padding="8dp"
+        android:layout_margin="2dp"/>
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+  <ListView
+      android:id="@+id/list_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
